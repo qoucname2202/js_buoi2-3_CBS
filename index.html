@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>baitap-ui-js</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<!-- Font -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Reset CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- My Css -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container py-5 px-3">
+			<div class="row">
+				<div class="col-3">
+					<div
+						class="nav flex-column nav-pills"
+						id="v-pills-tab"
+						role="tablist"
+						aria-orientation="vertical"
+					>
+						<button
+							class="nav-link active mb-3"
+							id="v-pills-bai1-tab"
+							data-toggle="pill"
+							data-target="#v-pills-bai1"
+							type="button"
+							role="tab"
+							aria-controls="v-pills-bai1"
+							aria-selected="true"
+						>
+							<span class="icon">📒</span>Bài 1
+						</button>
+						<button
+							class="nav-link mb-3"
+							id="v-pills-bai2-tab"
+							data-toggle="pill"
+							data-target="#v-pills-bai2"
+							type="button"
+							role="tab"
+							aria-controls="v-pills-bai2"
+							aria-selected="false"
+						>
+							<span class="icon">📒</span>Bài 2
+						</button>
+						<button
+							class="nav-link mb-3"
+							id="v-pills-bai3-tab"
+							data-toggle="pill"
+							data-target="#v-pills-bai3"
+							type="button"
+							role="tab"
+							aria-controls="v-pills-bai3"
+							aria-selected="false"
+						>
+							<span class="icon">📒</span>Bài 3
+						</button>
+						<button
+							class="nav-link mb-3"
+							id="v-pills-bai4-tab"
+							data-toggle="pill"
+							data-target="#v-pills-bai4"
+							type="button"
+							role="tab"
+							aria-controls="v-pills-bai4"
+							aria-selected="false"
+						>
+							<span class="icon">📒</span>Bài 4
+						</button>
+						<button
+							class="nav-link mb-3"
+							id="v-pills-bai5-tab"
+							data-toggle="pill"
+							data-target="#v-pills-bai5"
+							type="button"
+							role="tab"
+							aria-controls="v-pills-bai5"
+							aria-selected="false"
+						>
+							<span class="icon">📒</span>Bài 5
+						</button>
+					</div>
+				</div>
+				<div class="col-9">
+					<div class="tab-content" id="v-pills-tabContent">
+						<div
+							class="tab-pane fade show active"
+							id="v-pills-bai1"
+							role="tabpanel"
+							aria-labelledby="v-pills-bai1-tab"
+						>
+							<h4 class="mb-3 text-warning">💰 Tính tiền lương nhân viên</h4>
+							<div class="bd-callout mb-4">
+								💡 Mô hình 3 khối
+								<ol>
+									<li>
+										Đầu vào
+										<ul>
+											<li>Nhập lương 1 ngày của nhân viên</li>
+											<li>Nhập số ngày nhân viên đó làm</li>
+										</ul>
+									</li>
+									<li>
+										Xử lý
+										<ul>
+											<li>Công thức: Lương 1 ngày * số ngày làm</li>
+										</ul>
+									</li>
+									<li>
+										Đầu ra
+										<ul>
+											<li>Tiền lương nhân viên</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-12 col-lg-6">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="price">Lương ngày</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="price"
+													placeholder="Nhập lương một ngày"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-6">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="days">Số ngày làm</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="days"
+													placeholder="Nhập số ngày làm"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button class="button" type="submit" id="btnTinhLuong">
+											Tính lương
+										</button>
+									</div>
+								</div>
+							</form>
+							<div class="alert alert-success mt-4" role="alert">
+								<i class="fa-solid fa-hand-point-right icon-res"></i>
+								<span class="showSalery mess"></span>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-bai2"
+							role="tabpanel"
+							aria-labelledby="v-pills-bai2-tab"
+						>
+							<h4 class="mb-3 text-warning">📚 Tính giá trị trung bình</h4>
+							<div class="bd-callout mb-4">
+								💡 Mô hình 3 khối
+								<ol>
+									<li>
+										Đầu vào
+										<ul>
+											<li>Nhập vào 5 số thực</li>
+										</ul>
+									</li>
+									<li>
+										Xử lý
+										<ul>
+											<li>Công thức: tổng năm số / 5</li>
+										</ul>
+									</li>
+									<li>
+										Đầu ra
+										<ul>
+											<li>Giá trị trung bình của 5 số</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-12 col-md-6 col-xl-4">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="numb1">Số thứ nhất</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="numb1"
+													placeholder="Nhập số thứ 1"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-xl-4">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="numb2">Số thứ hai</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="numb2"
+													placeholder="Nhập số thứ 2"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-xl-4">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="numb3">Số thứ ba</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="numb3"
+													placeholder="Nhập số thứ 3"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-xl-4">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="numb4">Số thứ tư</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="numb4"
+													placeholder="Nhập số thứ 4"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-xl-4">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="numb5">Số thứ năm</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="numb5"
+													placeholder="Nhập số thứ 5"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button class="button" type="submit" id="btnTinhTB">
+											Tính trung bình
+										</button>
+									</div>
+								</div>
+							</form>
+							<div class="alert alert-success mt-4" role="alert">
+								<i class="fa-solid fa-hand-point-right icon-res"></i>
+								<span class="showAverage mess"></span>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-bai3"
+							role="tabpanel"
+							aria-labelledby="v-pills-bai3-tab"
+						>
+							<h4 class="mb-3 text-warning">💱 Quy đổi tiền</h4>
+							<div class="bd-callout mb-4">
+								💡 Mô hình 3 khối
+								<ol>
+									<li>
+										Đầu vào
+										<ul>
+											<li>Nhập vào số tiền đô muốn dổi</li>
+										</ul>
+									</li>
+									<li>
+										Xử lý
+										<ul>
+											<li>Giá USD mặc định 1 USD = 23500</li>
+											<li>Công thức: số tiền * 23500</li>
+										</ul>
+									</li>
+									<li>
+										Đầu ra
+										<ul>
+											<li>Số tiền việt nhận được sau khi chuyển đổi</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-12">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="dollar">Số tiền</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="dollar"
+													placeholder="Nhập số tiền"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button class="button" type="submit" id="btnQuyDoi">
+											Quy đổi tiền
+										</button>
+									</div>
+								</div>
+							</form>
+							<div class="alert alert-success mt-4" role="alert">
+								<i class="fa-solid fa-hand-point-right icon-res"></i>
+								<span class="showMoneyChange mess"></span>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-bai4"
+							role="tabpanel"
+							aria-labelledby="v-pills-bai4-tab"
+						>
+							<h4 class="mb-3 text-warning">
+								📏 Tính diện tích, chu vi hình chữ nhật
+							</h4>
+							<div class="bd-callout mb-4">
+								💡 Mô hình 3 khối
+								<ol>
+									<li>
+										Đầu vào
+										<ul>
+											<li>Nhập vào chiều dài và chiều rộng hình chữ nhật</li>
+											<li>
+												<span class="text-danger">Lưu ý: </span>
+												Chiều dài phải lớn hơn chiều rộng
+											</li>
+										</ul>
+									</li>
+									<li>
+										Xử lý
+										<ul>
+											<li>Chu vi: (chieuDai + chieuRong) * 2</li>
+											<li>Diện tích: chieuDai * chieuRong</li>
+										</ul>
+									</li>
+									<li>
+										Đầu ra
+										<ul>
+											<li>Chu vi và diện tích hình chữ nhật</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="length">Chiều dài</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="length"
+													placeholder="Nhập chiều dài"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="width">Chiều rộng</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="width"
+													placeholder="Nhập chiều rộng"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button class="button" type="submit" id="btnTinhHCN">
+											Tính
+										</button>
+									</div>
+								</div>
+							</form>
+							<div class="alert alert-success mt-4" role="alert">
+								<i class="fa-solid fa-hand-point-right icon-res"></i>
+								<span class="showMoneyChange mess"></span>
+							</div>
+						</div>
+						<div
+							class="tab-pane fade"
+							id="v-pills-bai5"
+							role="tabpanel"
+							aria-labelledby="v-pills-bai5-tab"
+						>
+							<h4 class="mb-3 text-warning">🧮 Tính tổng 2 ký số</h4>
+							<div class="bd-callout mb-4">
+								💡 Mô hình 3 khối
+								<ol>
+									<li>
+										Đầu vào
+										<ul>
+											<li>Nhập vào số có hai chữ số</li>
+										</ul>
+									</li>
+									<li>
+										Xử lý
+										<ul>
+											<li>hang_dv = so % 10</li>
+											<li>hang_chuc = Math.floor(so / 10)</li>
+											<li>tong = hang_dv + hang_chuc</li>
+										</ul>
+									</li>
+									<li>
+										Đầu ra
+										<ul>
+											<li>Tổng 2 ký số của số vừa nhập</li>
+										</ul>
+									</li>
+								</ol>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-12">
+										<div class="form-group">
+											<div class="text-field">
+												<label for="numbTwoDigit">Nhập số 2 chữ số</label>
+												<input
+													autocomplete="off"
+													type="number"
+													id="numbTwoDigit"
+													placeholder="Nhập số có hai chữ số"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button class="button" type="submit" id="btnTinhTong">
+											Tính tổng
+										</button>
+									</div>
+								</div>
+							</form>
+							<div class="alert alert-success mt-4" role="alert">
+								<i class="fa-solid fa-hand-point-right icon-res"></i>
+								<span class="showMoneyChange mess"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
