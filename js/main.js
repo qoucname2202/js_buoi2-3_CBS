@@ -1,3 +1,16 @@
+const buttons = document.querySelectorAll('.nav button');
+buttons[0].children[0].innerHTML = '📖';
+buttons.forEach((item, idx) => {
+	item.addEventListener('click', e => {
+		item.children[0].innerHTML = '📖';
+		buttons.forEach((res, index) => {
+			if (idx !== index) {
+				res.children[0].innerHTML = '📒';
+			}
+		});
+	});
+});
+
 // Bài 1: Tính lương nhân viên
 document.getElementById('btnTinhLuong').addEventListener('click', e => {
 	e.preventDefault();
