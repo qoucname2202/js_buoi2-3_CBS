@@ -1,3 +1,4 @@
+// Change open and close exercises
 const buttons = document.querySelectorAll('.nav button');
 buttons[0].children[0].innerHTML = '📖';
 buttons.forEach((item, idx) => {
@@ -23,6 +24,7 @@ document.getElementById('btnTinhLuong').addEventListener('click', e => {
 		style: 'currency',
 		currency: 'VND',
 	});
+	// Reset form
 	setTimeout(() => {
 		formSalery.reset();
 		result.innerText = '';
@@ -41,6 +43,7 @@ document.getElementById('btnTinhTB').addEventListener('click', e => {
 	const sum = numb1 + numb2 + numb3 + numb4 + numb5;
 	const averageNumb = sum / 5;
 	showRes.innerText = averageNumb.toFixed(3);
+	// Reset form
 	setTimeout(() => {
 		myForm.reset();
 		showRes.innerText = '';
@@ -57,6 +60,7 @@ document.getElementById('btnQuyDoi').addEventListener('click', e => {
 		style: 'currency',
 		currency: 'VND',
 	});
+	// Reset form
 	setTimeout(() => {
 		document.getElementById('myFormMoney').reset();
 		message.innerText = '';
@@ -83,6 +87,7 @@ document.getElementById('btnTinhHCN').addEventListener('click', e => {
 	const perimeter = (width + length) * 2;
 	const area = width * length;
 	showRectangle.innerText = `Diện tích: ${area} - Chu vi: ${perimeter}`;
+	// Reset form
 	setTimeout(() => {
 		myForm.reset();
 		showRectangle.innerText = '';
@@ -98,6 +103,7 @@ document.getElementById('btnTinhTong').addEventListener('click', e => {
 	const units = number % 10;
 	const total = tenths + units;
 	showTotalNumb.innerText = total;
+	// Reset form
 	setTimeout(() => {
 		myForm.reset();
 		showTotalNumb.innerText = '';

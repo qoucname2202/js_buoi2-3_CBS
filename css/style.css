@@ -43,6 +43,7 @@ button:focus {
 	margin-bottom: 1.25rem;
 	border-radius: 0.25rem;
 	border-left: 0.25rem solid #5bc0de !important;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .text-field {
 	position: relative;
